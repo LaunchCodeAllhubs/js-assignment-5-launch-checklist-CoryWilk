@@ -26,7 +26,7 @@ function validateInput(testInput) {
     return "Is a Number";
    };
 }
-
+list.style.visibility = 'hidden'
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     let faultyItems = document.getElementById("fautlyItems");
     let pilotStatus = document.getElementById("pilotStatus");
@@ -47,7 +47,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         list.style.visibility = 'hidden';
     }
 
-    list.style.visibility = 'hidden';
+    
 
     if (fuelLevel < 10000) {
         fuelStatus.innerHTML = `Fuel level too low for launch`;
