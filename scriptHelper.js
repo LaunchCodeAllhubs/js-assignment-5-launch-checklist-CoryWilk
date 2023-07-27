@@ -42,24 +42,24 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         window.alert("Do Not Enter Numbers For Pilot Or Copilot Names");
     }else {
         pilotStatus.innerHTML = `Pilot ${pilot} Is Ready`;
-        copilotStatus.innerHTML = `Copilot ${copilot} Is Ready`;
+        copilotStatus.innerHTML = `Co-pilot ${copilot} Is Ready`;
         list.style.visibility = 'hidden';
     }
 
     if (fuelLevel < 10000) {
-        fuelStatus.innerHTML = `Not Enough Fuel For Journey`;
+        fuelStatus.innerHTML = `Fuel level too low for launch`;
         list.style.visibility = 'visible';
-        launchStatus.innerHTML = `Shuttle Not Ready For Launch`;
+        launchStatus.innerHTML = `Shuttle Not Ready for Launch`;
         launchStatus.style.color = 'red';
     }else if (cargoLevel > 10000) {
-        cargoStatus.innerHTML = `Cargo Too Heavy For Takeoff`;
+        cargoStatus.innerHTML = `Cargo mass too heavy for launch`;
         list.style.visibility = 'visible';
-        launchStatus.innerHTML = `Shuttle Not Ready For Launch`;
+        launchStatus.innerHTML = `Shuttle Not Ready for Launch`;
         launchStatus.style.color = 'red';
     }else if(cargoLevel < 10000 && fuelLevel > 10000) {
         list.style.visibility = 'visible';
-        fuelStatus.innerHTML = `Enough Fuel For Journey`;
-        cargoStatus.innerHTML = `Cargo Light Enough For Takeoff`;
+        fuelStatus.innerHTML = `Fuel level high enough for launch`;
+        cargoStatus.innerHTML = `Cargo mass low enough for launch`;
         launchStatus.innerHTML = `Shuttle Ready For Launch`;
         launchStatus.style.color = 'green';
     }
