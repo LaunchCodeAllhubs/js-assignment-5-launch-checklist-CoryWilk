@@ -41,8 +41,8 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     }else if (validateInput(pilot) == "Is a Number" || validateInput(copilot) == "Is a Number"){
         window.alert("Do Not Enter Numbers For Pilot Or Copilot Names");
     }else {
-        pilotStatus.innerHTML = `Pilot ${pilot} Is Ready`;
-        copilotStatus.innerHTML = `Co-pilot ${copilot} Is Ready`;
+        pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch`;
+        copilotStatus.innerHTML = `Co-pilot ${copilot} is ready for launch`;
         list.style.visibility = 'hidden';
     }
 
