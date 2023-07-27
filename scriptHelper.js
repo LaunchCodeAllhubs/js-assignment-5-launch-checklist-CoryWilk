@@ -26,7 +26,7 @@ function validateInput(testInput) {
     return "Is a Number";
    };
 }
-list.style.visibility = 'hidden'
+
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     let faultyItems = document.getElementById("fautlyItems");
     let pilotStatus = document.getElementById("pilotStatus");
