@@ -47,7 +47,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     }else {
         pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch`;
         copilotStatus.innerHTML = `Co-pilot ${copilot} is ready for launch`;
-        list.style.visibility = 'hidden';
+        list.style.visibility = '';
     }
 
     
